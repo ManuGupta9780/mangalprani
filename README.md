@@ -8,7 +8,7 @@ Task : Help the Mars Curiosity Rover find the shortest path between two points w
 
 NOTE: This project is not suitable for mobiles or older versions of browsers. Google Chrome or Safari work best. Implementing on full screen is recommended(preferably 13"-15"). 
 
-To view the project, click this link: https://shortestpathfindingrover.herokuapp.com/#instruct
+To view the project, click this link: https://shortestpathfindingrover.herokuapp.com/
 
 INTRODUCTION :
 
