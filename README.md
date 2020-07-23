@@ -8,6 +8,8 @@ Task : Help the Mars Curiosity Rover find the shortest path between two points w
 
 NOTE:  This project is not suitable for mobiles or older versions of browsers. Google Chrome or Safari work best.
 
+To view the project, click this link: https://shortestpathfindingrover.herokuapp.com/#instruct
+
 INTRODUCTION :
 
 •	What is Pathfinding Visulaizer?  - It is called a Pathfinding Visualizer, aptly because it does what it says, it finds a path from a source to a destination. This project is based on graph theory.
