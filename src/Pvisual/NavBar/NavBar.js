@@ -108,33 +108,7 @@ export default class NODE extends Component {
                 >
                   Dijkstra's
                 </NavDropdown.Item>
-                <NavDropdown.Item
-                  href="#action/3.8"
-                  onClick={() =>
-                    visualizeAlgorithm(
-                      0,
-                      end_node_row,
-                      end_node_col,
-                      constants.DFS_NORM,
-                      1
-                    )
-                  }
-                >
-                  Depth First Search - Normal
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  href="#action/3.9"
-                  onClick={() =>
-                    visualizeAlgorithm(
-                      0,
-                      end_node_row,
-                      end_node_col,
-                      constants.DFS_RAND
-                    )
-                  }
-                >
-                  Depth First Search - Randomised
-                </NavDropdown.Item>
+
                 <NavDropdown.Item
                   href="#action/4.0"
                   onClick={() =>

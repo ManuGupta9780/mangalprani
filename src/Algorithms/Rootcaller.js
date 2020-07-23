@@ -1,9 +1,9 @@
 import * as constants from "../Pvisual/Constants";
 import { dijkstras, getNodesInShortestPathOrder } from "./dijkstra2";
-import { solve_dfs, getNodesInShortestPathOrderDFS } from "./DFS";
+
 import { solve_bfs, getNodesInShortestPathOrderBFS } from "./BFS2";
 
-import { solve_mbfs, getNodesInShortestPathOrderMBFS } from "./BFSmultiple";// for bidirectional BFS
+import { solve_mbfs, getNodesInShortestPathOrderMBFS } from "./BFSmultiple"; // for bidirectional BFS
 
 import { solve_astar, getNodesInShortestPathOrderASTAR } from "./Astar";
 import {
@@ -24,23 +24,14 @@ function get_paths(
   var end_node = grid[end_row][end_col];
   var visitedNodesInOrder = [];
   var nodesInShortestPathOrder = [];
-//call for switching the path finding algo
+  //call for switching the path finding algo
   switch (algo_type) {
     case constants.DIJK: {
       visitedNodesInOrder = dijkstras(grid, start_node, end_node);
       nodesInShortestPathOrder = getNodesInShortestPathOrder(end_node);
       break;
     }
-    case constants.DFS_NORM: {
-      visitedNodesInOrder = solve_dfs(grid, start_node, end_node, 1);
-      nodesInShortestPathOrder = getNodesInShortestPathOrderDFS();
-      break;
-    }
-    case constants.DFS_RAND: {
-      visitedNodesInOrder = solve_dfs(grid, start_node, end_node, 0);
-      nodesInShortestPathOrder = getNodesInShortestPathOrderDFS();
-      break;
-    }
+
     case constants.BFS: {
       visitedNodesInOrder = solve_bfs(grid, start_node, end_node);
       nodesInShortestPathOrder = getNodesInShortestPathOrderBFS(end_node);
@@ -66,7 +57,7 @@ function get_paths(
   }
 
   return [visitedNodesInOrder, nodesInShortestPathOrder];
-    //return the path both the visited node as well as the shortest one
+  //return the path both the visited node as well as the shortest one
 }
 
 function middle_case(

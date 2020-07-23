@@ -10,8 +10,7 @@ export const BUILD_MAZE = 5;
 export const DONE = 6;
 
 export const DIJK = 100;
-export const DFS_NORM = 101;
-export const DFS_RAND = 102;
+
 export const BFS = 103;
 export const MBFS = 104;
 export const ASTAR = 105;
