@@ -37,8 +37,8 @@ INTRODUCTION :
    
 **Meet the Algorithms-->**
 
-1. **A* Search**
-A* (pronounced as "A star") is a computer algorithm that is widely used in pathfinding and traversal. The algorithm efficiently plots a walkable path between multiple nodes, or points, on the graph. On a map with many obstacles, pathfinding from points AA to BB can be difficult. A robot, for instance, without getting much other direction, will continue until it encounters an obstacle, as in the path-finding example to the left below.
+**1.A*Search**
+    A* (pronounced as "A star") is a computer algorithm that is widely used in pathfinding and traversal. The algorithm efficiently plots a walkable path between multiple nodes, or points, on the graph. On a map with many obstacles, pathfinding from points AA to BB can be difficult. A robot, for instance, without getting much other direction, will continue until it encounters an obstacle, as in the path-finding example to the left below.
 However, the A* algorithm introduces a heuristic into a regular graph-searching algorithm, essentially planning ahead at each step so a more optimal decision is made. With A*, a robot would instead find a path in a way similar to the diagram on the right below.
 A Search* (weighted): arguably the best pathfinding algorithm; uses heuristics to guarantee the shortest path much faster than Dijkstra's Algorithm
 
@@ -60,11 +60,11 @@ The Space Complexity of the DFS algorithm is O(log(d)) where is 'd' is the depth
 **5.Greedy Best-First Search**
 It is a suboptimal best-first search algorithm which works on the principle of A* Algorithm and always priorities the node with the lowest heuristic value without any consideration of the cost to get to that node. While this greedy GBFS algorithm can be effective in practice, it can be misled by an arbitrary amount if th heuristic is wrong. Hence, it does not gurantee shortest path.
 
-**On top of the pathfinding algorithms listed above, I implemented a Recursive Division Maze Generation algorithms. the Maze Generation has been implemented using DFS Algorithm.
+**On top of the pathfinding algorithms listed above, I implemented a Recursive Division Maze Generation algorithms. the Maze Generation has been implemented using DFS Algorithm.**
 
 **The graph has the following:
 • vertices, or nodes, denoted in the algorithm by vv or uu;
-• weighted edges that connect two nodes: (u,vu,v) denotes an edge, and w(u,v)w(u,v) denotes its weight. In the diagram on the right, the weight for each edge is written in gray.
+• weighted edges that connect two nodes: (u,vu,v) denotes an edge, and w(u,v)w(u,v) denotes its weight. In the diagram on the right, the weight for each edge is written in gray.**
 
 
 
