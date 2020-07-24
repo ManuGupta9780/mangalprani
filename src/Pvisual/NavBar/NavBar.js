@@ -12,20 +12,6 @@ export default class NODE extends Component {
     this.state = {};
   }
 
-  /* handleStatus = (a) => {
-    if (preserved.includes(a)) {
-      preserved = preserved.filter((num) => {
-        return num !== a;
-      });
-    } else {
-      preserved.push(a);
-    }
-    this.props.handlePreserveChange(preserved);
-  };*/
-
-  /* componentDidMount() {
-    document.getElementById("checkbox-1").checked = true;
-  } */
   render() {
     const {
       clearBoard,

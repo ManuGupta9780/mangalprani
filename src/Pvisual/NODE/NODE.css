@@ -1,48 +1,33 @@
-/*.node {
-  float: left;
-  width: 25.4062%;
-  height: 25.4062%;
-  outline: 1px solid rgb(175, 216, 248);
-  text-align: center;
-}
-@media screen and (max-width: 960%) {
-  .node {
-    float: none;
-    position: static;
-  }
-}
 .node {
-  float: left;
-  position: relative;
-  display: inline-flex;
+  display: inline-block;
   width: 25.4062px;
   height: 25.4062px;
   outline: 1px solid rgb(175, 216, 248);
   text-align: center;
-  width: 25px;
-  height: 25px;
-  float: left;
-  position: relative;
-  outline: 1px solid rgb(175, 216, 248);
-  top: 0.35em;
-  margin: 0 0.42em;
+  overflow-inline: auto;
 }
+
 @media screen and (max-width: 960px) {
   .node {
-    float: none;
     position: static;
   }
-}*/
-.node {
-  float: left;
-  width: 25.4062px;
-  height: 25.4062px;
-  outline: 1px solid rgb(175, 216, 248);
-  text-align: center;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   .node {
-    float: none;
+    width: 21.4062px;
+    height: 21.4062px;
+    position: static;
+  }
+}
+@media screen and (max-width: 600px) {
+  .node {
+    width: 17.4062px;
+    height: 17.4062px;
+    position: static;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .node {
     position: static;
   }
 }

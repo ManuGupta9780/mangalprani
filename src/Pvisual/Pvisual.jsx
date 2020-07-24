@@ -22,7 +22,6 @@ let cur_row;
 let cur_col;
 let algo = "";
 
-//var Preserved = [];
 var buttonPressed = constants.NONE;
 var workIsDone = false;
 var time;
@@ -70,14 +69,12 @@ export default class Pvisual extends Component {
 
     if (workIsDone === true) {
       console.log("me");
-      //if (this.state.grid[row][col].isWall) return;
+
       this.visualizeAlgorithm(1, row, col, algo);
     }
   };
 
   handleMouseDown = (row, col) => {
-    //if (row === cur_row && col === cur_col) return;
-
     this.setState({ mouseIsPressed: true });
 
     if (this.state.grid[row][col].isStart) {
@@ -118,10 +115,6 @@ export default class Pvisual extends Component {
     if (buttonPressed === constants.ADD_MID) add_mid_node(this.state.grid);
     else if (buttonPressed === constants.DEL_MID) del_mid_node(this.state.grid);
   };
-
-  /*handlePreserveChange = (preserved_data) => {
-    Preserved = preserved_data;
-  };*/
 
   handleAlgorithm = (end_row, end_col, algo_type) => {
     var startTime = Date.now();
@@ -206,9 +199,6 @@ export default class Pvisual extends Component {
       for (let j = 0; j < M; j++) {
         var node = g[i][j];
 
-        //if (Preserved.includes(constants.PRESERVE_WALLS)) {
-        //if (node.isWall === true) continue;
-        //}
         document.getElementById(`node-${i}-${j}`).className = "node";
         node.row = i;
         node.col = j;
